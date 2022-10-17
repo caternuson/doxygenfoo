@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classFoo" kind="class" language="C++" prot="public">
+    <compoundname>Foo</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFoo_1a16eddb7296c37d91335845d7b847c6b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Foo::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="13" column="7" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFoo_1a6addab71f859bbc49378493337eea280" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Foo::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="13" column="9" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFoo_1abddcaf1806543646a2757c81fdd98deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Foo::Foo</definition>
+        <argsstring>(void)</argsstring>
+        <name>Foo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with default values, x=y=0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="3" column="3" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1a33891ee73e2ea35b8c3401cfb06be491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Foo::Foo</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Foo</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defname>xval</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defname>yval</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that allows setting initial values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial value for x. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial value for y. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="4" column="3" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1aae9f959828d53dbbc7b96588a7c592c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Foo::~Foo</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Foo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="5" column="3" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1a732d86c67b68787ebb73d9e6a5f2e871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Foo::setX</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set X. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="7" column="8" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1a1cde9d118f852e3289cda0b8697b461a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Foo::setY</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Y. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="8" column="8" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1ae99925566547ed4e6cd58bb8d9e788b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Foo::getX</definition>
+        <argsstring>(void)</argsstring>
+        <name>getX</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get X. <simplesect kind="return"><para>The value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="9" column="7" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1abd42b48859e6d73528d38d6e8548e038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Foo::getY</definition>
+        <argsstring>(void)</argsstring>
+        <name>getY</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Y. <simplesect kind="return"><para>The value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="10" column="7" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/methuzla/repos/doxygenfoo/src/Foo.h" line="1" column="10" bodyfile="/home/methuzla/repos/doxygenfoo/src/Foo.h" bodystart="1" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classFoo_1abddcaf1806543646a2757c81fdd98deb" prot="public" virt="non-virtual"><scope>Foo</scope><name>Foo</name></member>
+      <member refid="classFoo_1a33891ee73e2ea35b8c3401cfb06be491" prot="public" virt="non-virtual"><scope>Foo</scope><name>Foo</name></member>
+      <member refid="classFoo_1ae99925566547ed4e6cd58bb8d9e788b7" prot="public" virt="non-virtual"><scope>Foo</scope><name>getX</name></member>
+      <member refid="classFoo_1abd42b48859e6d73528d38d6e8548e038" prot="public" virt="non-virtual"><scope>Foo</scope><name>getY</name></member>
+      <member refid="classFoo_1a732d86c67b68787ebb73d9e6a5f2e871" prot="public" virt="non-virtual"><scope>Foo</scope><name>setX</name></member>
+      <member refid="classFoo_1a1cde9d118f852e3289cda0b8697b461a" prot="public" virt="non-virtual"><scope>Foo</scope><name>setY</name></member>
+      <member refid="classFoo_1a16eddb7296c37d91335845d7b847c6b3" prot="private" virt="non-virtual"><scope>Foo</scope><name>x</name></member>
+      <member refid="classFoo_1a6addab71f859bbc49378493337eea280" prot="private" virt="non-virtual"><scope>Foo</scope><name>y</name></member>
+      <member refid="classFoo_1aae9f959828d53dbbc7b96588a7c592c3" prot="public" virt="non-virtual"><scope>Foo</scope><name>~Foo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
