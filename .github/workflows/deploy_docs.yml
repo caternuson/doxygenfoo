@@ -19,9 +19,10 @@ jobs:
     #     repository: adafruit/ci-arduino
     #     path: ci
       - name: Secrets Test
-        run: echo "HELLO WORLD"
+        run: echo HELLO WORLD
       - run: echo ${{ github.actor }}
       - run: echo ${{ secrets.GH_REPO_TOKEN }}
+      - run: doxygen --version
 
     # - name: Build and Deploy Docs
     #   env:
