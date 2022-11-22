@@ -4,11 +4,11 @@ on: push
 
 jobs:
   deploy_docs:
+    name: Fancy Name
     runs-on: ubuntu-latest
-
     steps:
     # checkout the repo so actions can run on it
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
     # # checkout python
     # - uses: actions/setup-python@v4
     #   with:
@@ -18,10 +18,10 @@ jobs:
     #   with:
     #     repository: adafruit/ci-arduino
     #     path: ci
-    - name: Secrets Test
-      run: echo "HELLO WORLD"
-      run: echo ${{ github.actor }}
-      run: echo ${{ secrets.GH_REPO_TOKEN }}
+      - name: Secrets Test
+        run: echo "HELLO WORLD"
+      - run: echo ${{ github.actor }}
+      - run: echo ${{ secrets.GH_REPO_TOKEN }}
 
     # - name: Build and Deploy Docs
     #   env:
