@@ -11,8 +11,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
     # install doxygen
-      - run: sudo apt-get update
-      - run: sudo apt-get install doxygen
+      - name: Install Doxygen
+        run:
+          - sudo apt-get update
+          - sudo apt-get install doxygen
+          - doxygen --version
     # # checkout python
     # - uses: actions/setup-python@v4
     #   with:
@@ -22,12 +25,6 @@ jobs:
     #   with:
     #     repository: adafruit/ci-arduino
     #     path: ci
-      - name: Secrets Test
-        run: echo HELLO WORLD
-      - run: echo ${{ github.actor }}
-      - run: echo ${{ secrets.GH_REPO_TOKEN }}
-      - run: doxygen --version
-
     # - name: Build and Deploy Docs
     #   env:
     #     GH_REPO_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
