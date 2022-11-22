@@ -10,6 +10,7 @@ jobs:
 
       - name: Checkout Repo
         uses: actions/checkout@v3
+        run: git branch -v
 
       - name: Install Doxygen
         run: |
@@ -19,7 +20,11 @@ jobs:
 
       - name: Generate Docs
         run : |
+          doxygen
+          cd docs
           ls -al
+          cd
+          pwd
 
     # # checkout python
     # - uses: actions/setup-python@v4
