@@ -31,8 +31,9 @@ jobs:
       - name: Add Docs
         run: |
           cd deploy
+          ls -al
           rm -rf html
-          cp ../docs/html .
+          cp -r ../docs/html .
           ls -al html
           git status
 
