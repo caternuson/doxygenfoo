@@ -33,6 +33,7 @@ jobs:
           git config --global user.email "actions_ci@nowhere.com"
           git config --global user.name "Actions CI"
           cd deploy
+          mkdir -p docs
           rm -rf docs/*
           cp -r ../docs/html/* docs
           git add .
