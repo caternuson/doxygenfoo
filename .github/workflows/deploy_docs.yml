@@ -19,10 +19,7 @@ jobs:
 
       - name: Generate Docs
         run : |
-          cd ${GITHUB_REPOSITORY}
-          doxygen
-
-
+          ls -al
 
     # # checkout python
     # - uses: actions/setup-python@v4
