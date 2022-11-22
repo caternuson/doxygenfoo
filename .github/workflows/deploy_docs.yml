@@ -11,8 +11,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - run: git branch -v
-
       - name: Install Doxygen
         run: |
           sudo apt-get update
@@ -20,12 +18,19 @@ jobs:
           doxygen --version
 
       - name: Generate Docs
-        run : |
+        run: |
           doxygen
           cd docs
           ls -al
           cd
           pwd
+
+      - name: Deploy Docs
+        run: |
+          mkdir deploy
+          cd deploy
+          git clone -b gh-pages ${{ github.repositoryUrl }}
+          ls -al
 
     # # checkout python
     # - uses: actions/setup-python@v4
