@@ -1,1 +1,10 @@
-Test repo for Doxygen/Sphinx/Breathe testing.
+Test repo for Doxygen learning
+==============================
+
+This repo is just for learning.
+  * this
+  * is
+  * a
+  * list
+
+

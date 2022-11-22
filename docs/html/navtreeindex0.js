@@ -1,0 +1,20 @@
+var NAVTREEINDEX0 =
+{
+"Foo_8h_source.html":[1,0,0,0],
+"annotated.html":[0,0],
+"classFoo.html":[0,0,0],
+"classFoo.html#a1cde9d118f852e3289cda0b8697b461a":[0,0,0,6],
+"classFoo.html#a33891ee73e2ea35b8c3401cfb06be491":[0,0,0,1],
+"classFoo.html#a732d86c67b68787ebb73d9e6a5f2e871":[0,0,0,5],
+"classFoo.html#aae9f959828d53dbbc7b96588a7c592c3":[0,0,0,2],
+"classFoo.html#abd42b48859e6d73528d38d6e8548e038":[0,0,0,4],
+"classFoo.html#abddcaf1806543646a2757c81fdd98deb":[0,0,0,0],
+"classFoo.html#ae99925566547ed4e6cd58bb8d9e788b7":[0,0,0,3],
+"classes.html":[0,1],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
+"files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"index.html":[],
+"pages.html":[]
+};
