@@ -26,11 +26,16 @@ jobs:
           pwd
 
       - name: Deploy Docs
+        uses: actions/checkout@v3
+        with:
+          ref: 'gh-pages'
+          path: 'deploy'
+
+      - name: Check
         run: |
-          mkdir deploy
           cd deploy
-          git clone -b gh-pages ${{ github.repositoryUrl }}
-          ls -al
+          ls -la
+          git branch -v
 
     # # checkout python
     # - uses: actions/setup-python@v4
