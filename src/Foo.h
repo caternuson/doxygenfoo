@@ -1,5 +1,5 @@
 /**
- * The Foo class.
+ * The Foo class. Now with more comments.
 */
 class Foo {
   public:
