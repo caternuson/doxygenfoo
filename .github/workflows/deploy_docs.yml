@@ -3,25 +3,27 @@ name: Deploy Documentation
 on: push
 
 jobs:
-  doc_deploy:
+  deploy_docs:
     runs-on: ubuntu-latest
 
     steps:
     # checkout the repo so actions can run on it
     - uses: actions/checkout@v3
-    # checkout python
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    # checkout ci-arduino in specific folder (ci)
-    - uses: actions/checkout@v3
-      with:
-        repository: adafruit/ci-arduino
-        path: ci
+    # # checkout python
+    # - uses: actions/setup-python@v4
+    #   with:
+    #     python-version: '3.10'
+    # # checkout ci-arduino in specific folder (ci)
+    # - uses: actions/checkout@v3
+    #   with:
+    #     repository: adafruit/ci-arduino
+    #     path: ci
+    -name: Secrets Test
+     run: echo ${{ secrets.GH_REPO_TOKEN }}
 
-    - name: Build and Deploy Docs
-      env:
-        GH_REPO_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
-        PRETTYNAME: "THIS IS A TEST"
-      run: bash ci/doxy_gen_and_deploy.sh
+    # - name: Build and Deploy Docs
+    #   env:
+    #     GH_REPO_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
+    #     PRETTYNAME: "THIS IS A TEST"
+    #   run: bash ci/doxy_gen_and_deploy.sh
 
