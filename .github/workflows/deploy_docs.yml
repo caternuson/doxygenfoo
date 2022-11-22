@@ -19,7 +19,9 @@ jobs:
     #     repository: adafruit/ci-arduino
     #     path: ci
     - name: Secrets Test
-      run: echo ${{ secrets.GH_REPO_TOKEN }}
+      run:
+        echo "HELLO WORLD"
+        echo ${{ secrets.GH_REPO_TOKEN }}
 
     # - name: Build and Deploy Docs
     #   env:
