@@ -20,22 +20,22 @@ jobs:
       - name: Generate Docs
         run: |
           doxygen
-          cd docs
-          ls -al
-          cd
-          pwd
+          ls -al docs
 
-      - name: Deploy Docs
+      - name: Get gh-pages Branch
         uses: actions/checkout@v3
         with:
           ref: 'gh-pages'
           path: 'deploy'
 
-      - name: Check
+      - name: Add Docs
         run: |
           cd deploy
-          ls -la
-          git branch -v
+          rm -rf html
+          cp ../docs/html .
+          ls -al html
+          git status
+
 
     # # checkout python
     # - uses: actions/setup-python@v4
