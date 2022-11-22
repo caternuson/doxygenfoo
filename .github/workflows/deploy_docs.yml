@@ -31,13 +31,15 @@ jobs:
       - name: Add Docs
         run: |
           cd deploy
+          git config --global user.email "actions_ci@nowhere.com"
+          git config --global user.name "Actions CI"
           ls -al
           rm -rf html
           cp -r ../docs/html .
           ls -al html
           git add .
           git commit -m "add docs"
-          git push origin gh-pages
+          git push --force origin gh-pages
 
 
     # # checkout python
